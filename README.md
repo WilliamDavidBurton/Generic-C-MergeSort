@@ -1,2 +1,8 @@
 # Generic-C-MergeSort
 A generic merge sort function for C.
+
+Testing is currently still underway, but so far it seems to work for simple integer arrays.
+
+The initial intent was to find a way to sort without requiring the extra O(n) space that makes merge sort less efficient than quick sort in the average case, but the cost of that seems to be O(log(n)) extra time for the merge method used instead.
+
+In theory, if there was a way to use O(log(n)) space to reduce the time complexity of the merge back down to O(nlog(n)), then things can be improved, but I'm not certain if that's possible.
